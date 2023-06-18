@@ -28,10 +28,11 @@ import 'package:flutter_map_widgets/widgets/dropdown_menu.dart';
 import 'package:flutter_map_widgets/widgets/expanded_tile.dart';
 import 'package:flutter_map_widgets/widgets/page_view.dart';
 import 'package:flutter_map_widgets/widgets/percent_indicator.dart';
+import 'package:flutter_map_widgets/widgets/popup_menu.dart';
 import 'package:flutter_map_widgets/widgets/tab_bar.dart';
 
 void main() => runApp(MaterialApp(
-  home: const MyDropDownButtonFormField(),
+  home: const MyPopupMenu(),
   debugShowCheckedModeBanner: false,
   theme: ThemeData(primarySwatch: Colors.deepOrange),
 ));
