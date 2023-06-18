@@ -26,6 +26,26 @@ class _AnimatedBuilderState extends State<AnimatedBuilder>
 
   @override
   Widget build(BuildContext context) {
-    return;
+    return AnimatedBuilder(animation: _animationController,
+        child: FlutterLogo(
+          size: 100,
+        ),
+        builder: (context, child){});
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
