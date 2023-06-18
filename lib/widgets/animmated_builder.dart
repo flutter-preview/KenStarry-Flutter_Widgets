@@ -15,7 +15,7 @@ class _AnimatedBuilderState extends State<AnimatedBuilder>
   void initState() {
     super.initState();
     _animationController =
-        AnimationController(duration: Duration(seconds: 1), vsync: this);
+        AnimationController(duration: Duration(seconds: 1), vsync: this)..repeat();
   }
 
   @override
