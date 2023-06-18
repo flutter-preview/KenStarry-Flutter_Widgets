@@ -23,6 +23,8 @@ class _AnimatedAlignState extends State<AnimatedAlign> {
         child: Container(
           width: double.infinity,
           height: 200,
+          color: Colors.blueGrey,
+          child: AnimatedAlign(),
         ),
       ),
     );
