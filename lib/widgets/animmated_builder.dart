@@ -7,12 +7,19 @@ class AnimatedBuilder extends StatefulWidget {
   State<AnimatedBuilder> createState() => _AnimatedBuilderState();
 }
 
-class _AnimatedBuilderState extends State<AnimatedBuilder> {
+class _AnimatedBuilderState extends State<AnimatedBuilder>
+    with TickerProviderStateMixin {
+  late final AnimationController _animationController;
 
-  bool selected = false;
+  @override
+  void initState() {
+    super.initState();
+    _animationController =
+        AnimationController(duration: Duration(seconds: 1), vsync: this);
+  }
 
   @override
   Widget build(BuildContext context) {
-    return ;
+    return;
   }
 }
