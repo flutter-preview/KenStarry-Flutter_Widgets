@@ -15,7 +15,8 @@ class _AnimatedBuilderState extends State<AnimatedBuilder>
   void initState() {
     super.initState();
     _animationController =
-        AnimationController(duration: Duration(seconds: 1), vsync: this)..repeat();
+        AnimationController(duration: Duration(seconds: 1), vsync: this)
+          ..repeat();
   }
 
   @override
@@ -26,26 +27,16 @@ class _AnimatedBuilderState extends State<AnimatedBuilder>
 
   @override
   Widget build(BuildContext context) {
-    return AnimatedBuilder(animation: _animationController,
+    return AnimatedBuilder(
+        animation: _animationController,
         child: FlutterLogo(
           size: 100,
         ),
-        builder: (context, child){});
+        builder: (context, child) {
+          return Transform.rotate(
+            angle: _animationController.value * 2.0 * math.pi,
+            child: child,
+          );
+        });
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
